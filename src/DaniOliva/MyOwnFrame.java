@@ -1,5 +1,6 @@
 package DaniOliva;
 import java.awt.Dimension ;
+import javax.swing.*;
 
 	public class MyOwnFrame extends JFrame {
 		public MyOwnFrame(String s){

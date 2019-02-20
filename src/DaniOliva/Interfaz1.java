@@ -23,5 +23,4 @@ public class Interfaz1 {
 		frame.pack();
 		frame.setVisible(true);
 	}
-
 }
