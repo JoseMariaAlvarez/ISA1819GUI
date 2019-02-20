@@ -2,11 +2,8 @@ package DanielDoblas;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.sql.Date;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -22,7 +19,7 @@ public class MyOwnFrame extends JFrame{
 		
 		//Añadir Label B
 		JLabel bLabel = new JLabel("Fecha Actual") ;
-		bLabel . setPreferredSize(new Dimension( 300 , 100) ) ;
+		bLabel . setPreferredSize(new Dimension( 100 , 100) ) ;
 		// Añadimos Label B al layout en el centro usando BorderLayout
 		getContentPane ( ) . add(bLabel,BorderLayout.CENTER) ;
 		
@@ -43,7 +40,7 @@ public class MyOwnFrame extends JFrame{
 		
 	
 		//Creamos el boton
-		JButton boton1 = new JButton("Boton 1");
+		JButton boton1 = new JButton(strdate);
 		//Añadimos el boton debajo de la fecha
 		getContentPane().add(boton1, BorderLayout.SOUTH);
 		//Ajusta todos los componentes del frame al tamaño maximo
