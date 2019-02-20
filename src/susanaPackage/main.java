@@ -7,11 +7,15 @@ public class main {
 	SwingUtilities.invokeLater ( new Runnable(){
 		
 			 public void run ( ){
-			MyOwnFrame frame = new MyOwnFrame("FrameDemo2"); //Display the window.
-			Etiqueta1 frame2 = new Etiqueta1("FrameDemo2");
-			frame.pack() ;
-			frame.setVisible(true);
+			//MyOwnFrame frame = new MyOwnFrame("FrameDemo2"); //Display the window.
+			//Etiqueta1 frame2 = new Etiqueta1("FrameDemo2"); // Ejercicio 1
+			//BotonUnico1 frame2 = new BotonUnico1("Boton con Fecha actual "); //Ejercicio 2
+			BotonUnico frame2 = new BotonUnico("Boton con Fecha actual "); //Ejercicio 2
+			//DosPaneles frame2 = new DosPaneles("Etiqueta y boton");
+			frame2.pack() ;
+			frame2.setVisible(true);
 			 }
 			});
+	
 }
 }
