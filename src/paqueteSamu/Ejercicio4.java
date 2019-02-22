@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.util.Calendar;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
@@ -18,7 +19,7 @@ public class Ejercicio4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		JFrame frame1= new JFrame("Ejercicio 4");
+		JFrame frame1= new JFrame("Ejercicio 4");//creamos la ventana
 		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //cerramos la app cuando cerramos la ventana
 		JPanel panel1 = new JPanel(); //creamos un panel
 		JPanel panel2 = new JPanel(); //creamos un panel
@@ -49,13 +50,16 @@ public class Ejercicio4 {
 
 		Calendar rightNow = Calendar.getInstance();//creamos un calendario
 		JButton Botonfecha = new JButton(rightNow.getTime().toString());//creamos un boton con la fecha
-		panel2.add(Botonfecha);//añadimos la fecha al panel
+		panel2.add(Botonfecha);//añadimos el botonn de la fecha al panel
 		
 		String[] opciones = {"primera opcion","segunda opcion", "tercera opcion"};//opciones disponibles del desplegable
 		JList<String> lista = new JList<String>(opciones);//creamos la lista de opciones
 		lista.setVisibleRowCount(3);//numero de opciones visibles 
 		JScrollPane barra = new JScrollPane(lista);//añadimos la barra de movimiento
 		panel2.add(barra);//añadimos al panel 2
+		//
+		JComboBox<String>box=new JComboBox<>(opciones);//otra forma de hacerlo, con un JComboBox
+		panel2.add(box);//añadimos el combobox al panel 2
 		
 	}
 
